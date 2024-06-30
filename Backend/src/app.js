@@ -10,6 +10,5 @@ const corsOptions = {
     methods: ['GET'], // Allow only GET method
     allowedHeaders: ['Content-Type', 'X-Requested-With'],
   };
-app.use('/api/data',  cors(corsOptions),dataRoutes);
 
 module.exports = app;

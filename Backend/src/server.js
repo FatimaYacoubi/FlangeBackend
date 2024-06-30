@@ -20,9 +20,7 @@ const io = require('socket.io')(server, {
     origin: '*'
   }
 });
- app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-});
+
 io.on('connection', (socket) => {
   console.log('Client connected');
 
@@ -45,6 +43,12 @@ io.on('connection', (socket) => {
 
       // Add new data to JSON array
       jsonData.push(data);
+         // If jsonData exceeds 10 entries, remove the oldest 5 entries
+         const maxEntries = 10;
+         if (jsonData.length > maxEntries) {
+           jsonData = jsonData.slice(jsonData.length - maxEntries); // Keep the newest 10 entries
+         }
+         
 
       // Ensure only the last five entries are kept
       const lastFive = jsonData.slice(-5);

@@ -1,0 +1,27 @@
+[
+  {
+    "timestamp": "2024-06-30T10:36:23.874Z",
+    "temperature": "47.43",
+    "pressure": "0.79"
+  },
+  {
+    "timestamp": "2024-06-30T10:36:24.046Z",
+    "temperature": "69.42",
+    "pressure": "5.49"
+  },
+  {
+    "timestamp": "2024-06-30T10:36:25.411Z",
+    "temperature": "9.19",
+    "pressure": "0.25"
+  },
+  {
+    "timestamp": "2024-06-30T10:36:28.875Z",
+    "temperature": "0.06",
+    "pressure": "4.72"
+  },
+  {
+    "timestamp": "2024-06-30T10:36:29.048Z",
+    "temperature": "1.29",
+    "pressure": "1.40"
+  }
+]
